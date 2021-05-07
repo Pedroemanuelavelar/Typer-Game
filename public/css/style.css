@@ -1,0 +1,54 @@
+.campo-digitacao {
+    font-size: 20px;
+    height: 130px;
+    border: 3px solid black;
+}
+
+.borda-vermelha {
+    border: 3px solid #e51c23;
+}
+
+.borda-verde {
+    border: 3px solid #4CAF50;
+}
+
+.frase {
+    font-size: 20px;
+    text-align: left;
+    /* -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	user-select: none; */
+}
+
+.botoes {
+    margin-top: 10px;
+}
+
+.icones {
+    vertical-align: middle;
+}
+
+.icone-excluir {
+    color: lightgray;
+    transition: all .4s ease-in-out;
+}
+
+.icone-excluir:hover {
+    color: #e51c23;
+}
+
+.red:hover {
+    background-color: #fc6459!important;
+    transition: all .4s;
+}
+
+.campo-desativado {
+    background-color: lightgray;
+    transition: all .4s ease-in-out;
+}
+
+#clock{
+    padding: 0 0 0 11px;
+}
+
