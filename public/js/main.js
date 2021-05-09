@@ -114,6 +114,17 @@ function reiniciaJogo() {
 
     campoDigitacao.toggleClass("campo-desativado");
 
+    // Evita ação de quando clicar no botão reiniciar, quando o game já estiver rodando de não adicionar o background cinza
+    if(!campoDigitacao == campoDigitacao.val("")) {
+        
+        campoDigitacao.addClass("campo-normal");
+
+    } else {
+
+        campoDigitacao.removeClass("campo-desativado");
+        
+    }
+
     campoDigitacao.removeClass("borda-verde");
     campoDigitacao.removeClass("borda-vermelha");
 

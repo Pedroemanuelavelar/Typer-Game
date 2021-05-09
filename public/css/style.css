@@ -1,3 +1,8 @@
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 .campo-digitacao {
     font-size: 20px;
     height: 130px;
@@ -48,7 +53,24 @@
     transition: all .4s ease-in-out;
 }
 
+.campo-normal {
+    background: #fff;
+    transition: all .4s ease-in-out;
+}
+
 #clock{
     padding: 0 0 0 11px;
 }
 
+#botao-placar {
+    margin-left: 5px;
+}
+
+.green:hover  {
+    background-color: #6cc46f!important;
+    transition: all .4s;
+}
+
+.placar {
+    display: none;
+}
