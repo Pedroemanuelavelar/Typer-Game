@@ -1,9 +1,11 @@
+var placar = $(".placar");
 $("#botao-placar").click(mostraPlacar);
+
 
 
 function inserePlacar() {
 
-    var corpoTabela = $(".placar").find("tbody");
+    var corpoTabela = placar.find("tbody");
     var usuario = "Pedro";
     var numeroPalavras = $("#contador-palavras").text();
 
@@ -11,8 +13,22 @@ function inserePlacar() {
     linha.find(".botao-remover").click(removeLinha);
 
     corpoTabela.prepend(linha);
-    $(".placar").slideDown(500);
+    placar.slideDown(500);
 
+    scrollPlacar();
+
+}
+
+function scrollPlacar() {
+
+    var posicaoPlacar =  placar.offset().top;
+
+    $("html, body").animate({
+
+        scrollTop: posicaoPlacar+"px"
+
+    }, 1000);
+    
 }
 
 function novaLinha(usuario, numPalavras) {
@@ -73,6 +89,6 @@ function removeLinha(event) {
 
 function mostraPlacar() {
 
-    $(".placar").stop().slideToggle(600);
+    placar.stop().slideToggle(600);
 
 }
