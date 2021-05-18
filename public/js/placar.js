@@ -59,7 +59,7 @@ function removeLinhaPadrao() {
         
         event.preventDefault();
         var linha = $(this).parent().parent();
-        linha.fadeOut();
+        linha.fadeOut(1000);
 
         setTimeout(function() {
 
