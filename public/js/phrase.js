@@ -13,4 +13,7 @@ function trocaFraseAleatoria(data) {
 
     frase.text(data[numeroAleatorio].texto);
 
+    atualizaTamanhoFrase();
+    atualizaTempoInicial(data[numeroAleatorio].tempo);
+
 }
