@@ -89,23 +89,21 @@ body {
     color: #000;
     background-color: #ffbab5;
     width: 280px;
-    padding: 13px 0px 13px 21px;
+    padding: 0px 0px 19px 21px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border-left: 6px solid #fa5056;
-    text-align: left;
     display: none;
 }
 
 .icon-close {
-    position: absolute;
     font-size: 18px!important;
-    left: 379px;
-    top: 181px;
     cursor: pointer;
-    color: #000000ad;
-    transform: translate(80px, 6px);
+    color: #000;
+    transform: translate(229px, 3px);
     transition: all .4s ease-out;
+    display: flex;
+    overflow: hidden;
 }
 
 .icon-close:hover {
