@@ -93,13 +93,18 @@ body {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border-left: 6px solid #fa5056;
+    text-align: left!important;
+    display: none;
+}
+
+#spinner {
     display: none;
 }
 
 .icon-close {
     font-size: 18px!important;
     cursor: pointer;
-    color: #000;
+    color: rgba(0, 0, 0, 0.616);
     transform: translate(229px, 3px);
     transition: all .4s ease-out;
     display: flex;
