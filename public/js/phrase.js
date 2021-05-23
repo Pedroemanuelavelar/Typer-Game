@@ -2,7 +2,7 @@ $("#botao-frase").click(fraseAleatoria);
 
 function fraseAleatoria() {
 
-    $("#spinner").toggle();
+    $("#spinner").show();
 
     $.get("http://localhost:3000/frases", trocaFraseAleatoria)
     .fail(function() {
@@ -13,7 +13,7 @@ function fraseAleatoria() {
 
     }).always(function() {
 
-        $("#spinner").toggle();
+        $("#spinner").hide();
 
     });
 
