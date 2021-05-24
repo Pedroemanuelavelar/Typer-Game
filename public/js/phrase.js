@@ -1,10 +1,13 @@
 $("#botao-frase").click(fraseAleatoria);
+$("#botao-frase-id").click(buscaFrase);
+
+var url = "http://localhost:3000/frases";
 
 function fraseAleatoria() {
 
     $("#spinner").show();
 
-    $.get("http://localhost:3000/frases", trocaFraseAleatoria)
+    $.get(url, trocaFraseAleatoria)
     .fail(function() {
 
         $("#erro").fadeIn(1000);
@@ -44,5 +47,39 @@ function closeBtn() {
         }, 1000);
 
     })
+
+}
+
+function buscaFrase() {
+
+    $("#spinner").show();
+
+    var fraseId = $("#frase-id").val();
+
+    var dados = { id: fraseId };
+
+    $.get(url, dados, trocaFrase)
+    .fail(function() {
+
+        $("#erro").fadeIn(1000);
+
+        closeBtn();
+
+    }).always(function() {
+
+        $("#spinner").hide();
+
+    });
+
+}
+
+function trocaFrase(data) {
+
+    var frase = $(".frase");
+
+    frase.text(data.texto);
+
+    atualizaTamanhoFrase();
+    atualizaTempoInicial(data.tempo);
 
 }
