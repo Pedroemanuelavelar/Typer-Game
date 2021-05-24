@@ -80,7 +80,17 @@ body {
     transition: all .4s;
 }
 
+.cyan:hover {
+    background-color: #51d0e0!important;
+    transition: all .4s;
+}
+
 #botao-frase {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#frase-id {
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -121,3 +131,6 @@ body {
     }
 }
 
+#frase-id {
+    width: 50px;
+}
