@@ -11,7 +11,7 @@ $(function() {
     inicializaMarcadores();
     removeLinhaPadrao();
     botaoReiniciar.click(reiniciaJogo);
-
+    atualizaPlacar();
 });
 
 function atualizaTempoInicial(tempo) {
