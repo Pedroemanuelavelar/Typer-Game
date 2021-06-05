@@ -134,3 +134,20 @@ body {
 #frase-id {
     width: 50px;
 }
+
+#botao-frase-id {
+    margin-right: 5px;
+}
+
+#botao-sync {
+    float: right;
+    clear: left;
+}
+
+.orange {
+    background-color: #ff9800;
+}
+
+.orange:hover {
+    background-color: #ff9900c7;
+}
